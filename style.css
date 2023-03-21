@@ -63,10 +63,11 @@
     width: 250px;
     height: 100vh;
     position: fixed;
-    right: 0;
+    right: -250px;
     top: 0;
     background: rgb(155, 68, 212);
     z-index: 2;
+    transition: 0.5s;
 }
 nav ul li{
     list-style: none;
@@ -81,16 +82,52 @@ nav ul li a{
     height: 50px;
     background: rgb(155, 68, 212);
     position: fixed;
-    right: 30px;
+    right: 40px;
     top: 20px;
-    border-radius: 2px;
+    border-radius: 3px;
     z-index: 3;
     cursor: pointer;
 }
 #menuBtn img{
     width: 20px;
     margin-top: 15px;
+    padding-left: 15px;
 }
-#menu{
-
+@media screen and (max-width:770px){
+    .banner-text h1{
+        font-size: 44px;
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+}
+/*--Features--*/
+#features{
+    width: 100%;
+    padding: 70px 0;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color:rgb(155, 68, 212) ;
+    font-weight: bold;
+    display: inline-block;
+}
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#660195,#fff);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.title-text h1{
+    font-size: 50px;
 }

@@ -34,16 +34,32 @@
  <div id="menuBtn">
     <img src="images/menu.png" id="menu">
  </div>
+ <!---Features--->
+<section id="features">
+    <div class="title-text">
+        <p>FEATURES</p>
+        <h1>Why to Choose Us</h1>
+    </div>
+</section>
+
+
+
+
+
+
  <script>
     var menuBtn = document.getElementById ("menuBtn")
     var sideNav = document.getElementById ("sideNav")
     var menu = document.getElementById ("menu")
+    sideNav.style.right="-250px";
     menuBtn.onclick = function (){
         if(sideNav.style.right== "-250px"){  
             sideNav.style.right="0";
+            menu.src="images/close.png";
         }
         else{
             sideNav.style.right="-250px";
+            menu.src="images/menu.png";
         }
     }
  </script>

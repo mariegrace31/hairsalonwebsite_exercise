@@ -15,10 +15,37 @@
         <h1>Hair Studio</h1>
         <p>Styling your hair is styling your life</p>
         <div class="banner-btn">
-            <a href="#"><span></span> Find Out</a>
+            <a href="#"><span></span>Find Out</a>
             <a href="#"><span></span>Read more</a>
         </div>
     </div>
  </section>   
+ <div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">TESTIMONIALS</a></li>
+            <li><a href="#">MEET US</a></li>
+        </ul>
+    </nav>
+ </div>
+ <div id="menuBtn">
+    <img src="images/menu.png" id="menu">
+ </div>
+ <script>
+    var menuBtn = document.getElementById ("menuBtn")
+    var sideNav = document.getElementById ("sideNav")
+    var menu = document.getElementById ("menu")
+    menuBtn.onclick = function (){
+        if(sideNav.style.right== "-250px"){  
+            sideNav.style.right="0";
+        }
+        else{
+            sideNav.style.right="-250px";
+        }
+    }
+ </script>
 </body>
 </html>

@@ -101,6 +101,18 @@ nav ul li a{
         display: block;
         margin: 20px auto;
     }
+    .title-text h1{
+        font-size: 35px;
+    }
+    .features{
+        flex-basis: 100%;
+    }
+    .features-img{
+        flex-basis: 100%;
+    }
+    .features-img img{
+        width: 100%;
+    }
 }
 /*--Features--*/
 #features{
@@ -113,21 +125,69 @@ nav ul li a{
 }
 .title-text p{
     margin: auto;
-    font-size: 20px;
+    font-size: 30px;
     color:rgb(155, 68, 212) ;
     font-weight: bold;
+    position: relative;
+    z-index: 1;
     display: inline-block;
 }
 .title-text p::after{
     content: '';
     width: 50px;
     height: 35px;
-    background: linear-gradient(#660195,#fff);
+    background: linear-gradient(#9c3bc9,#fff);
     position: absolute;
-    top: 0;
+    top: -20;
     left: 0;
     z-index: -1;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
 }
 .title-text h1{
     font-size: 50px;
 }
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.features{
+    flex-basis: 50%;
+}
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.features-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+.features h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #8a0bc5;
+}
+.features-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.feature-icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #8a0bc5;
+    border: 1px solid #8a0bc5;
+}
+.feature-text p{
+    padding: 0 20px;
+    text-align: initial;
+}
+/*SERVICES*/
